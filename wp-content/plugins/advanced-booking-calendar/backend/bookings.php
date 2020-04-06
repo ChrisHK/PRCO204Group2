@@ -1089,6 +1089,8 @@ function abc_booking_customMessageContent() {
 	}
 } //==>customMessageContent
 
+
+
 function abc_booking_customMessageSend() {
 	if ( !current_user_can( abc_booking_admin_capabilities() ) ) {
 		wp_die("You don't have access to this page.");
