@@ -9,3 +9,31 @@
 [18-Mar-2020 07:30:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/prcokme1/public_html/wp-includes/update.php on line 162
 [18-Mar-2020 07:31:00 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/prcokme1/public_html/wp-includes/update.php on line 388
 [18-Mar-2020 07:31:07 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/prcokme1/public_html/wp-includes/update.php on line 577
+[31-Mar-2020 11:22:22 UTC] WordPress database error Table 'prcokme1_wp.wp_woocommerce_sessions' doesn't exist for query SELECT session_value FROM wp_woocommerce_sessions WHERE session_key = '1' made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WooCommerce->init, wc_load_cart, WooCommerce->initialize_session, WC_Session_Handler->init, WC_Session_Handler->init_session_cookie, WC_Session_Handler->get_session_data, WC_Session_Handler->get_session
+[31-Mar-2020 11:22:22 UTC] WordPress database error Table 'prcokme1_wp.wp_wc_webhooks' doesn't exist for query SELECT webhook_id
+				FROM wp_wc_webhooks
+				WHERE 1=1
+				AND `status` = 'active'
+				
+				
+				
+				
+				
+				ORDER BY webhook_id DESC made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WooCommerce->init, WooCommerce->load_webhooks, wc_load_webhooks, WC_Data_Store->__call, WC_Webhook_Data_Store->get_webhooks_ids, WC_Webhook_Data_Store->search_webhooks
+[31-Mar-2020 11:22:22 UTC] WordPress database error Table 'prcokme1_wp.wp_woocommerce_attribute_taxonomies' doesn't exist for query SELECT * FROM wp_woocommerce_attribute_taxonomies WHERE attribute_name != '' ORDER BY attribute_name ASC; made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Post_Types::register_taxonomies, wc_get_attribute_taxonomies
+[31-Mar-2020 11:22:53 UTC] Astra: Batch Process Started!
+[31-Mar-2020 11:22:53 UTC] Astra: Queuing 2.3.3 - astra_elementor_default_color_typo_comp
+[31-Mar-2020 11:22:53 UTC] Astra: Queuing 2.3.4 - astra_breadcrumb_separator_fix
+[31-Mar-2020 11:22:57 UTC] Astra: db version updated successfully!
+[31-Mar-2020 11:22:57 UTC] Astra: Batch Process Completed!
+[31-Mar-2020 11:27:05 UTC] PHP Fatal error:  Out of memory (allocated 66060288) (tried to allocate 32768 bytes) in /home/prcokme1/public_html/wp-content/plugins/astra-sites/inc/importers/wxr-importer/class-wxr-importer.php on line 914
+[31-Mar-2020 11:33:20 UTC] PHP Fatal error:  Out of memory (allocated 55050240) (tried to allocate 5242880 bytes) in /home/prcokme1/public_html/wp-content/themes/astra/inc/core/class-astra-admin-settings.php on line 842
+[31-Mar-2020 11:33:21 UTC] PHP Fatal error:  Out of memory (allocated 48758784) (tried to allocate 12288 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/API/Reports/Coupons/DataStore.php on line 315
+[31-Mar-2020 11:33:23 UTC] PHP Fatal error:  Out of memory (allocated 55050240) (tried to allocate 5242880 bytes) in /home/prcokme1/public_html/wp-content/themes/astra/inc/core/class-astra-admin-settings.php on line 842
+[31-Mar-2020 11:33:23 UTC] PHP Fatal error:  Out of memory (allocated 68157440) (tried to allocate 36864 bytes) in /home/prcokme1/public_html/wp-content/plugins/ultimate-member/includes/core/class-shortcodes.php on line 926
+[31-Mar-2020 11:34:10 UTC] PHP Fatal error:  Out of memory (allocated 34078720) (tried to allocate 65536 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/includes/class-wc-ajax.php on line 398
+[31-Mar-2020 11:40:27 UTC] PHP Fatal error:  Out of memory (allocated 66060288) (tried to allocate 65536 bytes) in /home/prcokme1/public_html/wp-admin/includes/template.php on line 1613
+[31-Mar-2020 11:41:35 UTC] PHP Fatal error:  Out of memory (allocated 46661632) (tried to allocate 65536 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 110
+[31-Mar-2020 11:41:42 UTC] PHP Fatal error:  Out of memory (allocated 20971520) (tried to allocate 36864 bytes) in /home/prcokme1/public_html/wp-content/plugins/advanced-booking-calendar/backend/bookings.php on line 426
+[31-Mar-2020 11:41:54 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2621440 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/vendor/composer/autoload_classmap_package.php on line 843
+[31-Mar-2020 11:41:58 UTC] PHP Fatal error:  Out of memory (allocated 18874368) (tried to allocate 20480 bytes) in /home/prcokme1/public_html/wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php on line 134
