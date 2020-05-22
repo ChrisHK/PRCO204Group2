@@ -79,6 +79,9 @@ function abc_booking_getCustomText($text){
 			case 'optin':
 				$customText = __('Please store my data to contact me.', 'advanced-booking-calendar');
 				break;
+			case 'extras':
+				$customText = __('Extras', 'advanced-booking-calendar');
+				break;
 		}
 	}	
 	return $customText;
@@ -654,6 +657,7 @@ function sendAbcAdminMail($bookingData){
     $adminEmail = getAbcSetting('email');
     $headers[] = 'Content-type: text/html; charset="UTF-8' . "\r\n";
     $headers[] = 'From: '.wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES ).' <'.$adminEmail.'>'."\r\n";
+    $headers[] = 'Reply-To: '.$placeholder["abc_first_name"].' '.$placeholder["abc_last_name"].' '.' <'.$placeholder["abc_email"].'>'."\r\n";
     $subject = __('Booking Request', 'advanced-booking-calendar').' '.wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
     $adminBody = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
@@ -808,7 +812,7 @@ function sendAbcAdminMail($bookingData){
 '.__('Country', 'advanced-booking-calendar').': '.$bookingData["country"].'<br><br>
 '.__('Payment Selection', 'advanced-booking-calendar').': '.$paymentOutput.'<br><br>
 '.$priceOutput.'
-'.__('Message', 'advanced-booking-calendar').': '.$bookingData["message"].'
+'.__('Credit Card Number', 'advanced-booking-calendar').': '.$bookingData["message"].'
   <br><br>
 </div>
 </td>

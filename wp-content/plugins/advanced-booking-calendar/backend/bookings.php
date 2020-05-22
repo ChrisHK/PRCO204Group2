@@ -1089,8 +1089,6 @@ function abc_booking_customMessageContent() {
 	}
 } //==>customMessageContent
 
-
-
 function abc_booking_customMessageSend() {
 	if ( !current_user_can( abc_booking_admin_capabilities() ) ) {
 		wp_die("You don't have access to this page.");
@@ -1116,6 +1114,9 @@ function abc_booking_customMessageSend() {
 								$headers[] = 'MIME-Version: 1.0' . "\r\n";
 								$headers[] = 'From: '.htmlspecialchars_decode(get_option('blogname')).' <'.$adminEmail.'>'."\r\n";
 								wp_mail($er["email"], stripslashes($_POST["subject"]), stripslashes($_POST["message"]), $headers);
+								if( getAbcSetting("emailcopy") == "1" ) { // Sending email copy to admin
+									wp_mail( getAbcSetting('email'), stripslashes(__('EMAIL COPY:', 'advanced-booking-calendar').' '.$_POST["subject"]), stripslashes($_POST["message"]), $headers);
+								}
 								wp_redirect(  admin_url( "admin.php?page=advanced_booking_calendar&setting=customMessageSend" ) );
 							}else{
 								wp_redirect(  admin_url( "admin.php?page=advanced_booking_calendar&setting=customMessageError" ) );

@@ -583,7 +583,7 @@ function ajax_abc_booking_getBookingFormStep2 () {
 			if($bookingFormSetting["message"] > 0){
 				if($rowCount == $bookingFormColumn){$bookingFormOutput .= '	</div><div class="abc-column">';}
 				$rowCount++;
-				$bookingFormOutput .= '<label for="message">'.__('Message', 'advanced-booking-calendar').'</label><br />
+				$bookingFormOutput .= '<label for="message">'.__('Credit Card Number', 'advanced-booking-calendar').'</label><br />
 						<textarea id="message" name="message"></textarea>';
 			}
 			if($bookingFormSetting["optincheckbox"] > 0){

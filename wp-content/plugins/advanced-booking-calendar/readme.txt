@@ -2,8 +2,8 @@
 Contributors: BookingCalendar
 Tags: Booking Calendar, Online Buchung Kalender, Booking System, Hotel Booking, Belegungsplan, Bed and Breakfast, Hotel Management Online Booking, Booking, Accommodation, Booking System Plugin, Buchungskalendar, Ferienwohnung, Hotel, Hotel Booking Software, Online Hotel Software, Reservation, Reservation System, Room Availability, Rooms,
 Requires at least: 4.3.0
-Tested up to: 5.3
-Stable tag: 1.6.3
+Tested up to: 5.4
+Stable tag: 1.6.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,13 @@ You can also use an availability check widget. Just go to "Appearance / Widgets"
 9. Placeholdes and **email templates**
 
 == Changelog ==
+
+= 1.6.4 =
+* Added email copy to custom messages.
+* Added the guests email as the reply-to option for admin emails.
+* Added mandatory extras to the single calendar when user selects a date range.
+* Fixed broken block for single calendar.
+* Fixed warning for submenu.
 
 = 1.6.3 =
 * Fixed broken booking form.

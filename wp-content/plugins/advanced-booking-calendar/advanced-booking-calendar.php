@@ -5,7 +5,7 @@ Plugin URI: https://booking-calendar-plugin.com/
 Description: The Booking System that makes managing your online reservations easy. A great Booking Calendar plugin for Accommodations.
 Author: Advanced Booking Calendar
 Author URI: https://booking-calendar-plugin.com
-Version: 1.6.3
+Version: 1.6.4
 Text Domain: advanced-booking-calendar
 Domain Path: /languages/
 */
@@ -153,7 +153,7 @@ function advanced_booking_calendar_install() {
 	dbDelta($seasons);
 	dbDelta($seasonsAssignment);
 	}
-	add_option('abc_pluginversion', '163');
+	add_option('abc_pluginversion', '164');
 	add_option ('abc_email', get_option( 'admin_email' ));
 	add_option ('abc_bookingpage', 0);
 	add_option ('abc_dateformat', "Y-m-d");
@@ -252,7 +252,8 @@ function advanced_booking_calendar_install() {
     						'bookNow' => '',
     						'thankYou' => '',
     						'roomPrice' => '',
-    						'optin' => ''
+    						'optin' => '',
+    						'extras' => ''
     				);
     add_option( 'abc_textCustomization',
     		serialize($textCustomization));
@@ -386,7 +387,7 @@ function advanced_booking_calendar_admin_actions() {
 			__('Settings', 'advanced-booking-calendar'),
 			$capability,
 			'advanced-booking-calendar-show-settings',
-			'advanced_booking_calendar_show_settings', 'dashicons-chart-pie'
+			'advanced_booking_calendar_show_settings'
 	);
 	//Submenu "More Features"
 	add_submenu_page('advanced_booking_calendar',
@@ -610,8 +611,18 @@ function advanced_booking_update_check(){
 		}
 		update_option( 'abc_pluginversion', '154');
 	}
-	if(get_option( 'abc_pluginversion' ) < '163') {
-		update_option( 'abc_pluginversion', '163');
+	if(get_option( 'abc_pluginversion' ) < '164') {
+		$newTexts = array();
+		if(get_option('abc_textCustomization') != false){
+			$textCustomization = unserialize(get_option('abc_textCustomization'));
+			foreach ($textCustomization as $locale=>$texts){
+				if(is_array($texts)){
+					$newTexts[$locale] = array_merge($texts, array('extras' => ''));
+				}
+			}
+			update_option('abc_textCustomization', serialize($newTexts));
+		}
+		update_option( 'abc_pluginversion', '164');
 	}	
 }
 add_action( 'plugins_loaded', 'advanced_booking_update_check' );

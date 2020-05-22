@@ -90,17 +90,17 @@ if ( ! class_exists( 'Hotel_Hamburg_Rooms_Widget' ) ) :
 						<div class="inner-wrapper">
 							<?php foreach ( $rooms as $room ) : ?>
 								<div class="rooms-item">
-									<div class="rooms-thumb">
+									<div class="rooms-thumb rounded">
 										<?php if ( ! empty( $room['image'] ) ) : ?>
 											<a href="<?php echo esc_url( get_permalink( absint( $room['infoPage'] ) ) ); ?>">
-											<img src="<?php echo esc_url( $room['image'][0] ); ?>" alt="" />
+											<img src="<?php echo esc_url( $room['image'][0] ); ?>" class="rounded" />
 											</a>
 										<?php else : ?>
 											<a href="<?php echo esc_url( get_permalink( absint( $room['infoPage'] ) ) ); ?>">
 											<img src="<?php echo get_template_directory_uri() . '/images/no-image.png'; ?>" alt="" />
 											</a>
 										<?php endif; ?>
-										<div class="room-price"><?php esc_html_e( 'From', 'hotel-hamburg' ); ?>&nbsp;<?php echo esc_html( abc_booking_formatPrice( $room['pricePreset'] ) ); ?></div>
+										<div class="room-price rounded"><?php esc_html_e( 'From', 'hotel-hamburg' ); ?>&nbsp;<?php echo esc_html( abc_booking_formatPrice( $room['pricePreset'] ) ); ?></div>
 									</div><!-- .rooms-thumb -->
 									<div class="rooms-text-content">
 										<h3 class="rooms-title">
@@ -117,7 +117,7 @@ if ( ! class_exists( 'Hotel_Hamburg_Rooms_Widget' ) ) :
 					<?php endif; ?>
 					<?php if ( ! empty( $view_more_text ) && ! empty( $view_more_url ) ) : ?>
 						<div class="more-button-wrapper">
-							<a href="<?php echo esc_url( $view_more_url ); ?>" class="more-button"><?php echo esc_html( $view_more_text ); ?></a>
+							<a href="<?php echo esc_url( $view_more_url ); ?>" class="more-button btn"><?php echo esc_html( $view_more_text ); ?></a>
 						</div> <!-- .more-button-wrapper -->
 					<?php endif; ?>
 				</div><!-- .container -->

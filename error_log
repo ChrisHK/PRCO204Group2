@@ -1,0 +1,19 @@
+[31-Mar-2020 11:27:05 UTC] PHP Fatal error:  Out of memory (allocated 55050240) (tried to allocate 8192 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Features/Onboarding.php on line 838
+[31-Mar-2020 11:32:52 UTC] PHP Fatal error:  Out of memory (allocated 68157440) (tried to allocate 32768 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/packages/woocommerce-rest-api/src/Controllers/Version3/class-wc-rest-product-reviews-controller.php on line 630
+[31-Mar-2020 11:34:10 UTC] PHP Fatal error:  Out of memory (allocated 61865984) (tried to allocate 20480 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/packages/woocommerce-rest-api/src/Controllers/Version3/class-wc-rest-products-controller.php on line 696
+[31-Mar-2020 11:41:33 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2621440 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php on line 1153
+[31-Mar-2020 11:41:35 UTC] PHP Fatal error:  Out of memory (allocated 55050240) (tried to allocate 20480 bytes) in /home/prcokme1/public_html/wp-content/plugins/elementor/core/common/modules/connect/apps/base-app.php on line 508
+[31-Mar-2020 11:41:35 UTC] PHP Fatal error:  Out of memory (allocated 38273024) (tried to allocate 65536 bytes) in /home/prcokme1/public_html/wp-content/plugins/wp-live-chat-support/modules/node_server.php on line 798
+[31-Mar-2020 11:41:42 UTC] PHP Fatal error:  Out of memory (allocated 70254592) (tried to allocate 20480 bytes) in /home/prcokme1/public_html/wp-includes/plugin.php on line 182
+[31-Mar-2020 11:41:54 UTC] PHP Fatal error:  Out of memory (allocated 48758784) (tried to allocate 32768 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 2767
+[31-Mar-2020 11:41:57 UTC] PHP Fatal error:  Out of memory (allocated 18874368) (tried to allocate 32768 bytes) in /home/prcokme1/public_html/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php on line 732
+[31-Mar-2020 11:41:58 UTC] PHP Fatal error:  Out of memory (allocated 20971520) (tried to allocate 32768 bytes) in /home/prcokme1/public_html/wp-content/plugins/advanced-booking-calendar/backend/bookings.php on line 1090
+[31-Mar-2020 11:41:58 UTC] PHP Fatal error:  Out of memory (allocated 31981568) (tried to allocate 65536 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/includes/class-wc-ajax.php on line 16
+[31-Mar-2020 11:42:00 UTC] PHP Fatal error:  Out of memory (allocated 31981568) (tried to allocate 65536 bytes) in /home/prcokme1/public_html/wp-content/plugins/woocommerce/includes/class-wc-ajax.php on line 16
+[31-Mar-2020 12:34:57 UTC] PHP Fatal error:  Out of memory (allocated 20971520) (tried to allocate 32768 bytes) in /home/prcokme1/public_html/wp-content/plugins/advanced-booking-calendar/backend/bookings.php on line 1178
+[31-Mar-2020 12:34:57 UTC] PHP Fatal error:  Out of memory (allocated 34078720) (tried to allocate 32768 bytes) in /home/prcokme1/public_html/wp-content/themes/hotel-hamburg/lib/tgm/class-tgm-plugin-activation.php on line 445
+[31-Mar-2020 12:34:57 UTC] PHP Fatal error:  Out of memory (allocated 16777216) (tried to allocate 1310720 bytes) in /home/prcokme1/public_html/wp-includes/media.php on line 3377
+[04-May-2020 16:31:51 UTC] wplc_api_send_message tamper detected B1FqnBg2K8_1588491698462
+[04-May-2020 16:32:37 UTC] wplc_api_send_message tamper detected B1FqnBg2K8_1588491698462
+[04-May-2020 16:32:57 UTC] wplc_api_send_message tamper detected B1FqnBg2K8_1588491698462
+[04-May-2020 16:35:51 UTC] wplc_api_send_message tamper detected B1FqnBg2K8_1588491698462

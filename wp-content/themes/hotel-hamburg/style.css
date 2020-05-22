@@ -1667,6 +1667,7 @@ object {
 .hotel_hamburg_widget_rooms .rooms-item img {
     margin: 0;
     vertical-align: middle;
+	height:200px;
 }
 
 .hotel_hamburg_widget_rooms .rooms-thumb {

@@ -15,6 +15,7 @@ jQuery('#tab-content').on('click', '#abc_textCustomizationSubmit', function(){
 	var textThankYou = jQuery("#textThankYou").val();
 	var textRoomPrice = jQuery("#textRoomPrice").val();
 	var textOptin = jQuery("#textOptin").val();
+	var textExtras = jQuery("#textExtras").val();
 	jQuery('#abc_textCustomizationSubmit').hide();
 	jQuery('#abc_textSavingLoading').show();
 	data = {
@@ -34,7 +35,8 @@ jQuery('#tab-content').on('click', '#abc_textCustomizationSubmit', function(){
 			textBookNow: textBookNow,
 			textThankYou: textThankYou,
 			textRoomPrice: textRoomPrice,
-			textOptin: textOptin
+			textOptin: textOptin,
+			textExtras: textExtras
 		};
 		jQuery.post(ajax_abc_settings.ajaxurl, data, function (response){
 			jQuery('#abc_textSavingLoading').hide();
@@ -70,6 +72,7 @@ jQuery( "select[name='abcLanguage']").on('change', function () {
 		jQuery('#textThankYou').val(textLabels.thankYou);
 		jQuery('#textRoomPrice').val(textLabels.roomPrice);
 		jQuery('#textOptin').val(textLabels.optin);
+		jQuery("#textExtras").val(textLabels.extras);
 		jQuery('#abc_textCustomizationSubmit').attr('disabled',false);
 		jQuery('#languageDropdown').attr('disabled',false);
 	});

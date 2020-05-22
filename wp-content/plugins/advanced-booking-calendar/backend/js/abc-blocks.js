@@ -64,7 +64,7 @@
 					el('div', { className: 'block-options' },
 						el( components.SelectControl, {
 							label: abcStrs.single.cal_lbl,
-							options: $.merge( [{"label": abcStrs.single.sel_cal,"value":""}], abc_block_calendars ),
+							options: jQuery.merge( [{"label": abcStrs.single.sel_cal,"value":""}], abc_block_calendars ),
 							value: props.attributes.calendar,
 							onChange: function( calendarID ) {
 								props.setAttributes({ calendar: calendarID })

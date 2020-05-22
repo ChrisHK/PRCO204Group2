@@ -151,7 +151,8 @@ function abc_booking_editTextCustomization() {
 							'bookNow' => sanitize_text_field($_POST["textBookNow"]),
 							'thankYou' => sanitize_text_field($_POST["textThankYou"]),
 							'roomPrice' => sanitize_text_field($_POST["textRoomPrice"]),
-							'optin' => sanitize_text_field($_POST["textOptin"])
+							'optin' => sanitize_text_field($_POST["textOptin"]),
+							'extras' => sanitize_text_field($_POST["textExtras"])
 						);
 		update_option( 'abc_textCustomization',	serialize($previousCustomization));
 	}
@@ -192,7 +193,8 @@ function ajax_abc_booking_getTextCustomization(){
 			'bookNow' => '',
 			'thankYou' => '',
 			'roomPrice' => '',
-			'optin' => ''
+			'optin' => '',
+			'extras' => ''
 		);
 	if(get_option('abc_textCustomization') != false){
 		$textCustomization = unserialize(get_option('abc_textCustomization'));
@@ -580,7 +582,8 @@ function advanced_booking_calendar_show_settings() {
 				'bookNow' => '',
 				'thankYou' => '',
 				'roomPrice' => '',
-				'optin' => ''
+				'optin' => '',
+				'extras' => ''
 		);
 	}
 	if($paymentArr["cash"]["activate"] == 'true') {
@@ -1103,6 +1106,12 @@ function advanced_booking_calendar_show_settings() {
 				<label class="uk-form-label" for="textOptin">'.__('Text for:', 'advanced-booking-calendar').' '.__('Please store my data to contact me.', 'advanced-booking-calendar').'</label>
 				<div class="uk-form-controls">
 					<input type="text" class="uk-form-width-large" name="textOptin" id="textOptin" value="'.$textCustomization["optin"].'"/>
+				</div>
+			  </div>
+			  <div class="uk-form-row">
+				<label class="uk-form-label" for="textExtras">'.__('Text for:', 'advanced-booking-calendar').' '.__('Extras', 'advanced-booking-calendar').'</label>
+				<div class="uk-form-controls">
+					<input type="text" class="uk-form-width-large" name="textExtras" id="textExtras" value="'.$textCustomization["extras"].'"/>
 				</div>
 			  </div>
 			  <div class="uk-form-row">

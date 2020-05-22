@@ -62,7 +62,7 @@ function abc_booking_getCalOverview ($atts) {
 		if($i == $cMonth){
 			$output .= ' selected';
 		}
-		$output .= '>'.date_i18n("M", strtotime("2016-".$i."-1")).'</option>';
+		$output .= '>'.date_i18n("M", strtotime("15-".zeroise($i,1)."-2019")).'</option>';
 	}
 	$output .='							</select>
 								<select data-id="'.$divId.'" class="abcYearSelector" name="abcYear" size="1">';

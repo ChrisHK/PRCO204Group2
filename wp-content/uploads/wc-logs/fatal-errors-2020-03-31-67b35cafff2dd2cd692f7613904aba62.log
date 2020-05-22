@@ -1,0 +1,2 @@
+2020-03-31T11:33:23+00:00 CRITICAL Out of memory (allocated 68157440) (tried to allocate 36864 bytes) in /home/prcokme1/public_html/wp-content/plugins/ultimate-member/includes/core/class-shortcodes.php on line 926
+
